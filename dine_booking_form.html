@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> dining table booking</title>
+</head>
+<body>
+<h1 align="center"><u>dine booking</u></h1>
+<form name="f">
+<div align="center">
+visitor name:
+<input type="text" name="visitorname">
+<br>
+number of memebers:
+ <input type="number" name="total">
+
+<br>
+contact no:
+<input type="number" pattern="[0-9]{10}">
+
+<br>
+email:
+<input type="email" name="mail">
+
+<br>
+Types of food: 
+
+<input type="checkbox" name="southindian" ><label>south Indian</label></td>
+
+<input type="checkbox" name="northindian" ><label>north Indian</label> 
+
+<input type="checkbox" name="western" >
+<label >western</label> 
+<input type="checkbox" name="chinese" >
+<label >chinese</label>
+
+<br>
+Room status:
+<input type="radio" name="room" value="AC" >AC 
+<input type="radio" name="room" value="NON-AC" >NON-AC
+<br>
+ Venue preferences:
+<select>
+<option>Arena</option> 
+
+<option>Fiesta</option>
+
+<option value="Vista"> Vista</option>
+<option value="Mythri">Mythri</option>
+<option value=" Magna">Magna</option>
+<option value="Oasis">Oasis</option>
+<option value="Amoeba" disabled>Amoeba</option>
+</select><br>
+<input type="submit" value="book"> 
+<input type="reset" value="reset">
+</div>
+</form>
+</body>
+</html>
