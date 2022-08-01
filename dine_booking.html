@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> dining table booking</title>
+</head>
+<body>
+<h1 align="center"><u>dine booking</u></h1>
+<form name="f">
+<table align="center">
+<tr>
+<td>visitor name:</td>
+<td><input type="text" name="visitorname">
+<tr>
+<td>number of memebers:</td>
+<td> <input type="number" name="total"></td>
+</tr>
+<tr>
+<td>contact no:</td>
+<td><input type="number" pattern="[0-9]{10}"></td>
+</tr>
+<tr>
+<td>email:</td>
+<td><input type="email" name="mail"</td>
+</tr>
+<tr>
+<td>Types of food:</td>
+
+<td><input type="checkbox" name="southindian" ><label>south Indian</label></td>
+</td>
+<td><input type="checkbox" name="northindian" ><label>north Indian</label></td>
+
+<td><input type="checkbox" name="western" >
+<label >western</label></td>
+<td><input type="checkbox" name="chinese" >
+<label >chinese</label></td>
+</tr>
+<tr>
+<td>Room status:</td>
+<td><input type="radio" name="room" value="AC" >AC</td>
+<td><input type="radio" name="room" value="NON-AC" >NON-AC</td></tr>
+<tr>
+<td> Venue preferences:</td>
+<td><select>
+<option>Arena</option> 
+
+<option>Fiesta</option>
+
+<option value="Vista"> Vista</option>
+<option value="Mythri">Mythri</option>
+<option value=" Magna">Magna</option>
+<option value="Oasis">Oasis</option>
+<option value="Amoeba" disabled>Amoeba</option>
+</select></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="book"></td>
+<td><input type="reset" value="reset"></td></tr>
+</table>
+</form>
+</body>
+</html>
