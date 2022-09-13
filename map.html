@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var users=[
+{"users":"hari"},
+{"users":"gopi"},
+{"users":"madhav"},
+{"users":"uddava"},
+{"users":"gopala"},
+{"users":"govinda"},
+{"users":"murari"},
+{"users":"krishna"},
+{"users":"vamsi"},
+{"users":"vishnu"},
+];
+let result=users.map(user=>
+{
+let mark=Math.random()*100;
+user.mark=mark;
+return user;
+}
+
+
+
+);
+var selected=result.filter
+(user=>
+{
+if(user.mark>80)
+{
+ return user;
+}
+
+});
+console.log(selected);
+</script>
+</head>
+</html>
