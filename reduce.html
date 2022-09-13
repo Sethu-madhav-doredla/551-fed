@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+const users = [
+  {
+    name: "harish",
+    city: "america",
+    birthYear: 1958
+  },
+  {
+    name: "sundar",
+    city: "chennai",
+    birthYear: null
+  },
+  {
+    name: "aravind",
+    city: "mumbai",
+    birthYear: 1978
+  },
+  {
+    name: "vardhan",
+    city: "agra",
+    birthYear: 2006,
+  }
+];
+
+const currentYear = new Date().getFullYear();
+
+const userNames = users.reduce((filterUsers, user) => {
+  if (user.birthYear && (currentYear - user.birthYear) > 25) {
+    filterUsers.push(user.name);
+  }
+  return filterUsers;
+}, []);
+
+console.log(userNames);
+</script>
+</head>
+</html>
